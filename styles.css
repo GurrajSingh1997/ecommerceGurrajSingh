@@ -1,0 +1,217 @@
+/* 
+    Colors-
+    Typography- Fonts-> serif, sam serif(These are the 2 Family where all the fonts fall in) Serif fonts - Sharp Edges
+    San Serif- No Sharp Edges
+*/
+
+
+/* Variables = Used to store a value which is to be used multiple time. ROOT = Means ROOT Element where it would be applied */
+:root{
+    --primary-color: hsl(26, 100%, 55%);
+    --secondary-color:hsl(25, 100%, 94%);
+    --Very-dark-blue: hsl(220, 13%, 13%);
+    --Dark-grayish-blue: hsl(219, 9%, 45%);
+    --Grayish-blue: hsl(220, 14%, 75%);
+    --Light-grayish-blue: hsl(223, 64%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%);
+
+
+/* to use this varialbe = 
+h1{
+    color: var(--primary-color)
+}
+*/
+}
+
+/* Below styles are applied from STYLEGUIDE.MD */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Font Family is copied from Google Fonts */
+body{
+    font-size: 16px;
+    font-family: 'Bangers', cursive;
+    font-family: 'Kumbh Sans', sans-serif;
+    max-width: 1200px;
+    /* Used to get the content to center */
+    margin: 0 auto;
+    /* 0 = TOP and Bottom, Auto = Auto align LEFT and Right */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 50px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+nav image{
+    margin-right:30px ;
+}
+ul{
+    display: flex;
+    list-style: none;
+    /* List Style = To remove dots from List */
+    align-items: center;
+}
+
+li{
+    margin-left: 30px;
+    color: gray;
+}
+
+li:hover{
+    color: var(--Black);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+header>div{
+    display: flex;
+    align-items: center;
+}
+
+[alt="avataar"]{
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+}
+
+
+
+/* Product Image Section Building */
+
+main{
+    display: flex;
+    padding: 0px 50px;
+    align-items: center;
+    gap: 100px;
+    /* GAP used to define the gap between */
+}
+
+[alt="product1"]{
+    width: 450px;
+    border-radius: 15px;
+}
+
+.thumbnail-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.thumbnail-container img{
+    width: 100px;
+    border-radius: 15px;
+}
+
+
+
+/* Product details section */
+
+p:first-child{
+ color: var(--primary-color);
+ text-transform: uppercase;
+ font-weight: 800;
+ letter-spacing: 1px;
+ margin-bottom: 15px;
+}
+
+p+h1{
+    font-size: 45px;
+    margin-bottom: 30px;
+
+}
+
+h1+p{
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 30px;
+    line-height: 30px;
+    /* Line Height: Used to increase the space in between */
+}
+
+
+.btn-wrapper{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.quantity-container{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--Light-grayish-blue)
+}
+
+.quantity-container span{
+    padding: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button{
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 15px 40px;
+    width: 50%;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.pricing{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.discount{
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+    background-color: var(--secondary-color);
+    padding: 4px 8px;
+    border-radius: 10px;
+    
+}
+
+button img{
+    margin-right: 10px;
+}
+
+
+.pricing p{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+    margin-top:10px ;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
